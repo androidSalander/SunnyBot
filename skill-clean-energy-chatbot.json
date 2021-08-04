@@ -1,0 +1,912 @@
+{
+  "intents": [
+    {
+      "intent": "clean_alternatives",
+      "examples": [
+        {
+          "text": "can i charge my device with solar?"
+        },
+        {
+          "text": "can i get a solar versiono f that?"
+        },
+        {
+          "text": "i don't want a gas washer dryere anymore"
+        },
+        {
+          "text": "looking for a solar generator"
+        },
+        {
+          "text": "what's a clean alternative"
+        },
+        {
+          "text": "what's a solar alternative for my water heater?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "device_energy_consumption",
+      "examples": [
+        {
+          "text": "how many kW does my device use"
+        },
+        {
+          "text": "how much energy does like a loptop use"
+        },
+        {
+          "text": "how much gas does my water heater use?"
+        },
+        {
+          "text": "id like to find the consumption of this device"
+        },
+        {
+          "text": "i don't lknow how much energy my fridge uses?"
+        },
+        {
+          "text": "is my phone using a lot of energy?"
+        },
+        {
+          "text": "what's the kWh on my tv?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodbye",
+      "examples": [
+        {
+          "text": "bon voyage"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "farewell"
+        },
+        {
+          "text": "good talking to you"
+        },
+        {
+          "text": "see ya"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "gratitude",
+      "examples": [
+        {
+          "text": "great, really appreciate it"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank u!"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "ur the best"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "greetings"
+        },
+        {
+          "text": "helllo"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "how ru?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "local_solar",
+      "examples": [
+        {
+          "text": "bay area solar companies"
+        },
+        {
+          "text": "help me get solar panels in san jose"
+        },
+        {
+          "text": "i want to go solar jersey city"
+        },
+        {
+          "text": "list of solar provoders california"
+        },
+        {
+          "text": "need local solar installation"
+        },
+        {
+          "text": "show me solar providers near me"
+        },
+        {
+          "text": "solar panels locally\\"
+        },
+        {
+          "text": "trying to find solar providers in my city"
+        },
+        {
+          "text": "where is the nearest solar installation company?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "understanding_units_of_measurement",
+      "examples": [
+        {
+          "text": "confused about thm"
+        },
+        {
+          "text": "help me with kwh"
+        },
+        {
+          "text": "i don't hunderstand kilowatts?"
+        },
+        {
+          "text": "i saw kwh on my energy bill and need help understanding"
+        },
+        {
+          "text": "my bill says kWh but id ont get it?"
+        },
+        {
+          "text": "whats a therms"
+        },
+        {
+          "text": "whats therm mean"
+        },
+        {
+          "text": "what;s thm?"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "device_IDs",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "EG12-50R55DV",
+          "synonyms": [
+            "A.O. Smith Signature Premier 50-Gallon"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "energy_consuming_devices",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "computer",
+          "synonyms": [
+            "laptop"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "electric water heater",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "refridgerator",
+          "synonyms": [
+            "fridge"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "smartphone",
+          "synonyms": [
+            "phone, cell"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "television",
+          "synonyms": [
+            "tv"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "energy_saving_devices",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "solar battery pack",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "solar generator",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "solar panels",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "locations",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Foster City",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Jersey City",
+          "synonyms": [
+            "JC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "London",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Oakland",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Francisco",
+          "synonyms": [
+            "frisco",
+            "san fran",
+            "SF"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "San Jose",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-percentage",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "units_of_measurement",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "kWh",
+          "synonyms": [
+            "kilowatt-hour"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "therm",
+          "synonyms": [
+            "thm"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1626995147737",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What city are you located in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1627881119024",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1627881119056",
+      "previous_sibling": "handler_4_1627881119056"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What kind of device do you have?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_8_1627898511232",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1627898511252",
+      "previous_sibling": "handler_6_1627898511252"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1627878524099",
+      "context": {
+        "unit": "@units_of_measurement"
+      },
+      "conditions": "@units_of_measurement",
+      "event_name": "input",
+      "dialog_node": "handler_2_1627878524121"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1627898477430",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1627899200001"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1627881119024",
+      "context": {
+        "city": "@locations"
+      },
+      "conditions": "@locations",
+      "event_name": "input",
+      "dialog_node": "handler_4_1627881119056"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1627898511232",
+      "context": {
+        "device": "@energy_consuming_devices"
+      },
+      "conditions": "@energy_consuming_devices",
+      "event_name": "input",
+      "dialog_node": "handler_6_1627898511252"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1627899213737",
+      "context": {
+        "ID": "@device_IDs"
+      },
+      "conditions": "@device_IDs",
+      "event_name": "input",
+      "dialog_node": "handler_6_1627899213739"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you need help understanding kilowatt-hours (kWh) or thermes?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1627878524099",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1627878524121",
+      "previous_sibling": "handler_2_1627878524121"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "And what is the name or model number?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1627899213737",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1627899213739",
+      "previous_sibling": "handler_6_1627899213739"
+    },
+    {
+      "type": "folder",
+      "title": "ChitChat",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1626995147737",
+      "previous_sibling": "node_5_1627881083266"
+    },
+    {
+      "type": "standard",
+      "title": "thank you",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are most welcome, and thank you for doing your part to reduce global carbon emissions!"
+              },
+              {
+                "text": "No problem! I am always happy to help 😊"
+              },
+              {
+                "text": "Of course, It's my pleasure 🌞"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1626995147737",
+      "conditions": "#gratitude",
+      "dialog_node": "node_4_1626995493884",
+      "previous_sibling": "node_5_1626995177246"
+    },
+    {
+      "type": "frame",
+      "title": "find solar alternative",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#device_energy_consumption",
+      "dialog_node": "node_4_1627898477430",
+      "previous_sibling": "node_8_1627878318562"
+    },
+    {
+      "type": "standard",
+      "title": "greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, lovely to meet you! How may I help you today?"
+              },
+              {
+                "text": "Greetings! What can I do to assist you?"
+              },
+              {
+                "text": "Welcome! What can I do for you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1626995147737",
+      "conditions": "#greetings",
+      "dialog_node": "node_5_1626995177246"
+    },
+    {
+      "type": "standard",
+      "title": "collect name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Wonderful to meet you $name 😊 How can I help you today? I'm here to assist you with your questions about energy consumption ⚡ and solar power 🌞"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1627602179755"
+    },
+    {
+      "type": "frame",
+      "title": "local solar",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#local_solar",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1627881083266",
+      "previous_sibling": "node_4_1627898477430"
+    },
+    {
+      "type": "standard",
+      "title": "goodbye",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Goodbye, until next time!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1626995147737",
+      "conditions": "#goodbye",
+      "dialog_node": "node_7_1626995888429",
+      "previous_sibling": "node_4_1626995493884"
+    },
+    {
+      "type": "frame",
+      "title": "understanding units of measurement",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#understanding_units_of_measurement",
+      "dialog_node": "node_8_1627878318562",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A kilowatt (kW) is a measurement of power equivalent to 1000 watts. A kilowatt-hour (kWh) is the amount of kilowatts a given device consumes over the course of one hour.",
+            "Here are some examples: a 1000 watt device will consume 1kWh, and a 100 watt device will consume 0.1kWh.",
+            "You can learn more about kWh on your electric bill <a href=\"https://electricityplans.com/kwh-kilowatt-hour-can-power/\">here</a>."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1627878318562",
+      "conditions": "$unit:kWh",
+      "dialog_node": "response_10_1627878524229",
+      "previous_sibling": "slot_3_1627878524099"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This water heater consumes 3531 kWh per year, which costs \\$424. This is about 295 kWh and $35 per month. "
+              },
+              {
+                "text": "I found a solar version on Amazon for \\$805.18 that attaches to your existing water heater. It's a big investment, but you would make up the cost after only two years. Check it out <a href=\"https://www.amazon.com/Complete-Panel-Hybrid-Solar-Heater/dp/B0041XXSJW/ref=pd_sbs_6/145-7884333-1358933?pd_rd_w=Ylxft&pf_rd_p=f8e24c42-8be0-4374-84aa-bb08fd897453&pf_rd_r=1W1HQA9RCYVNG5PQDBJ7&pd_rd_r=61c66d00-a9ec-4405-a4fc-7d85f36e05d6&pd_rd_wg=bkUJg&pd_rd_i=B0041XXSJW&psc=1\" target=\"_blank\">here</a>!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1627898477430",
+      "conditions": "$ID:EG12-50R55DV",
+      "dialog_node": "response_10_1627898511207",
+      "previous_sibling": "slot_4_1627899213737"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I found a solar provider in London called UK Solar Power, check out their website <a href=\"https://www.uksolarpower.com/\" target=\"_blank\">here</a>!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1627881083266",
+      "conditions": "$city:London",
+      "dialog_node": "response_2_1627881237044",
+      "previous_sibling": "response_4_1627881225860"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I found a solar provider in Oakland called GRID Alternatives, check out their website <a href=\"https://gridalternatives.org/\" target=\"_blank\">here</a>!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1627881083266",
+      "conditions": "$city:Oakland",
+      "dialog_node": "response_4_1627881215451",
+      "previous_sibling": "response_5_1627881119125"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I found a solar provider in Foster City called Complete Solar, check out their website <a href=\"https://www.completesolar.com/\">here</a>!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1627881083266",
+      "conditions": "$city == \"Foster City\"",
+      "dialog_node": "response_4_1627881225860",
+      "previous_sibling": "response_4_1627881215451"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A therm (thm) is a measurement of heat energy equivalent to 100,000 British thermal units (Btu)."
+              },
+              {
+                "text": "One therm is approximately equivalent to burning 100 cubic feet (2.83 cubic meters) of natural gas."
+              },
+              {
+                "text": "Learn more about therms on your gas bill <a href=\"https://welcome.arcadia.com/energy-101/energy-bills/what-is-a-therm/\">here</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1627878318562",
+      "conditions": "$unit:therm",
+      "dialog_node": "response_5_1627878596347",
+      "previous_sibling": "response_10_1627878524229"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I found a solar provider in San Francisco called Occidental Solar, check out their website <a href=\"http://www.oxypower.com/index.html\" target=\"_blank\">here</a>!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1627881083266",
+      "conditions": "$city == \"San Francisco\"",
+      "dialog_node": "response_5_1627881119125"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I found a solar provider in San Jose called Vivint Solar, check out their website <a href=\"https://www.vivintsolar.com/state/california/san-jose-solar\" target=\"_blank\">here</a>!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1627881083266",
+      "conditions": "$city == \"San Jose\"",
+      "dialog_node": "response_8_1627881245688",
+      "previous_sibling": "response_2_1627881237044"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm so sorry, I'm having trouble finding anything near there 😥"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1627881083266",
+      "conditions": "$city == \"Jersey City\"",
+      "dialog_node": "response_9_1627881257234",
+      "previous_sibling": "response_8_1627881245688"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1627881083266",
+      "variable": "$city",
+      "dialog_node": "slot_10_1627881119024",
+      "previous_sibling": "response_9_1627881257234"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1627878318562",
+      "variable": "$unit",
+      "dialog_node": "slot_3_1627878524099"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1627898477430",
+      "variable": "$ID",
+      "dialog_node": "slot_4_1627899213737",
+      "previous_sibling": "slot_8_1627898511232"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1627898477430",
+      "variable": "$device",
+      "dialog_node": "slot_8_1627898511232",
+      "previous_sibling": "handler_2_1627899200001"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, my name is Sunny 🌞 and I'm a chatbot 🤖 here to help you learn how to save money 💸 and reduce your carbon footprint 👣 What's your name?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "AO smith signature premier 50 gallon"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "clean energy chatbot",
+  "language": "en",
+  "description": ""
+}
